@@ -374,7 +374,8 @@ footer {
     .img_container {
         width: 100%;
         height: 100%;
-        background-size: 300px auto;
+        background-size: clamp(300px, 50%, 600px) auto;
+        background-position: center center;
     }
 
     .sub_title {
