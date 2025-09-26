@@ -363,11 +363,11 @@ footer {
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .description {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .img_container {
@@ -376,12 +376,12 @@ footer {
     }
 
     .sub_title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .section_1 {
         margin-top: 3rem;
-        width: 85%;
+        width: 95%;
     }
 
     .video_container {
@@ -390,7 +390,7 @@ footer {
     }
 
     video {
-        width: 150vw;
+        width: 100vw;
         /* ocupar toda a largura da tela */
         max-width: 100%;
         /* não limitar no mobile */
@@ -420,11 +420,11 @@ footer {
     }
 
     .faq_item summary {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .faq_item p {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .packs {
@@ -440,7 +440,7 @@ footer {
     }
 
     .beneficios {
-        font-size: 1rem;
+        font-size: 1.2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -452,11 +452,11 @@ footer {
     }
 
     .preco_ancora {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .preco_final {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .cover {
@@ -469,21 +469,25 @@ footer {
     }
 
     .timer_text {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .btn_comprar {
-        width: 250px;
+        width: 280px;
         height: 80px;
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     main {
         margin-bottom: 15rem;
     }
 
+    footer {
+        height: 100px;
+    }
+
     footer p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: center;
     }
 
