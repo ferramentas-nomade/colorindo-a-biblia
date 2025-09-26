@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/svgs/Colored Shapes.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(1.5px);
+    /* intensidade do desfoque */
+    z-index: -1;
+    /* fica atrás do conteúdo */
+}
+
+
+header {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.title_container {
+    /* background-color: rgb(255, 0, 68); */
+    margin-left: 1rem;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ff3131;
+    text-align: center;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.249);
+    text-shadow:
+        -2px -2px 0 #f4db52,
+        2px -2px 0 #f4dc52a0,
+        -2px 2px 0 #00000094,
+        2px 2px 0 #0000005e;
+}
+
+
+.description {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+}
+
+.img_container {
+    /* background-color: rgb(8, 101, 40); */
+    background-image: url('../assets/gifs/hero-01.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+
+main {
+    height: auto;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #d7e8ef; */
+}
+
+.section_1 {
+    margin-top: 4rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_title {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff3131;
+    text-align: center;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.249);
+    text-shadow:
+        -2px -2px 0 #f4db52,
+        2px -2px 0 #f4dc52a0,
+        -2px 2px 0 #00000094,
+        2px 2px 0 #0000005e;
+}
+
+.video_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.video_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+video {
+    border-radius: 20px;
+    border: 4px solid #ff3131;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Botão de play central */
+.play_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    background: #ff3131;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.play_btn:hover {
+    background: #ff6b6b;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Controles abaixo */
+.controls {
+    display: flex;
+    gap: 15px;
+}
+
+.controls button {
+    background: #ff3131;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #ff6b6b;
+}
+
+.section_2 {
+    margin-top: 4rem;
+    height: max-content;
+    width: 75%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f4db52;
+    border: 4px solid #ff3131;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.faq_item {
+    width: 100%;
+    border: 2px solid #ff3131;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #fffbe6;
+    transition: 0.3s;
+}
+
+/* Estilo do título (summary substitui o h3) */
+.faq_item summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    /* list-style: none; remove marcador padrão */
+    color: #ff3131;
+    padding: 0.5rem 0;
+}
+
+/* Quando aberto */
+.faq_item[open] summary {
+    color: #333;
+}
+
+/* Texto interno */
+.faq_item p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 0.8rem;
+}
+
+.section_pack {
+    margin-top: 4rem;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f4db52;
+    border-top: 4px solid #ff3131;
+    border-bottom: 4px solid #ff3131;
+    padding-bottom: 4rem;
+}
+
+.packs {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cover {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.eboock_cover {
+    width: 500px;
+    height: 500px;
+    transform: scale(0.9);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.eboock_cover:hover {
+    transform: scale(1.05) rotate(-1deg);
+    /* leve aumento e inclinação */
+    border-radius: 50%;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    background-color: #ff3131;
+    /* sombra mais forte */
+}
+
+.price {
+    width: 50%;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.beneficios li {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    /* font-family: 'Comic Neue', cursive; */
+}
+
+.preco_ancora {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.preco_ancora .cortado {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.preco_final {
+    font-size: 2.5rem;
+    color: #ff3131;
+    margin: 1rem 0;
+}
+
+.btn_comprar {
+    background: #ff3131;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_comprar:hover {
+    background: #ff6b6b;
+    transform: scale(1.05);
+}
+
+.timer_text {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff3131;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3131;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title_container {
+        /* background-color: #ff3131; */
+        height: 60%;
+        width: 85%;
+
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .img_container {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .sub_title {
+        font-size: 1.5rem;
+    }
+
+    .section_1 {
+        margin-top: 3rem;
+        width: 85%;
+    }
+
+    .video_container {
+        width: 100%;
+        /* ocupar toda largura do container */
+    }
+
+    video {
+        width: 150vw;
+        /* ocupar toda a largura da tela */
+        max-width: 100%;
+        /* não limitar no mobile */
+        height: auto;
+        /* manter proporção */
+        border-radius: 12px;
+        /* leve arredondado pra não ficar exagerado */
+    }
+
+
+    .play_btn {
+        font-size: 2rem;
+        /* menor ícone */
+        padding: 12px 15px;
+        /* menos espaço interno */
+    }
+
+    .controls button {
+        font-size: 1rem;
+        padding: 8px 12px;
+        /* botões menores */
+        border-radius: 8px;
+    }
+
+    .section_2 {
+        width: 95%;
+    }
+
+    .faq_item summary {
+        font-size: 1rem;
+    }
+
+    .faq_item p {
+        font-size: 0.95rem;
+    }
+
+    .packs {
+        flex-direction: column;
+    }
+
+    .price {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .beneficios {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .beneficios li {
+        text-align: center;
+    }
+
+    .preco_ancora {
+        font-size: 1.5rem;
+    }
+
+    .preco_final {
+        font-size: 1.8rem;
+    }
+
+    .cover {
+        width: 100%;
+    }
+
+    .eboock_cover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .timer_text {
+        font-size: 1.3rem;
+    }
+
+    .btn_comprar {
+        width: 250px;
+        height: 80px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        margin-bottom: 15rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src//css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="icon" href="./src/assets/imgs/favicon-16x16.png" type="image/x-icon">
+    <title>Colorindo a Bíblia</title>
+</head>
+
+<body>
+    <header>
+        <div class="title_container">
+            <h1 class="title">Colorindo a Bíblia</h1>
+            <p class="description">Ilustrações de temática bíblica exclusivas no estilo Bob Goods.
+                Prontas para imprimir em alta qualidade e colorir como atividade recreativa e divertida.
+            </p>
+        </div>
+        <div class="img_container">
+
+        </div>
+    </header>
+    <main>
+        <section class="section_1">
+            <h2 class="sub_title">Bem-vindo ao Colorindo a Bíblia</h2>
+            <div class="video_container">
+                <div class="video_wrapper">
+                    <video id="meuVideo" width="1200" height="500" poster="./src/assets/imgs/fundo-video.png">
+                        <source src="./src/assets/videos/0924(1).mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo em HTML5.
+                    </video>
+                    <!-- Botão central -->
+                    <button class="play_btn" id="playBtn">▶</button>
+                </div>
+
+                <!-- Controles personalizados -->
+                <div class="controls">
+                    <button id="btnPlayPause">▶ / ⏸</button>
+                    <button id="btnMute">🔊</button>
+                    <button id="btnFull">⛶</button>
+                </div>
+            </div>
+        </section>
+        <section class="section_2">
+            <h2 class="sub_title">Por que colorir com a Bíblia?</h2>
+
+            <details class="faq_item">
+                <summary>Como essa atividade ajuda meu filho?</summary>
+                <p>Colorir ilustrações bíblicas desenvolve criatividade, coordenação motora, concentração e interesse
+                    pela Palavra de Deus.</p>
+            </details>
+
+            <details class="faq_item">
+                <summary>É adequado para crianças pequenas?</summary>
+                <p>Sim! Os desenhos são pensados para várias idades e podem ser usados em casa, escola dominical ou
+                    atividades com tias das crianças.</p>
+            </details>
+
+            <details class="faq_item">
+                <summary>Como ajuda a tirar meu filho das telas?</summary>
+                <p>Oferecendo uma atividade lúdica e educativa, que une aprendizado, diversão e interação em família ou
+                    grupo.</p>
+            </details>
+
+            <details class="faq_item">
+                <summary>Posso usar nas aulas da escola dominical?</summary>
+                <p>Sim! É perfeito para ensinar valores bíblicos de forma divertida, interativa e prática para grupos de
+                    crianças.</p>
+            </details>
+        </section>
+
+        <section class="section_pack">
+            <h2 class="sub_title">Pack Heróis da Bíblia</h2>
+            <div class="packs">
+                <div class="cover">
+                    <img src="/src/assets/imgs/packs-20-herois-da-biblia.png" alt="" srcset=""
+                        class="eboock_cover">
+                </div>
+                <div class="price">
+                    <ul class="beneficios">
+                        <li>📖 20 personagens bíblicos</li>
+                        <li>🎨 +100 ilustrações prontas para colorir</li>
+                        <li>🖨️ Arquivos em PDFS de alta qualidade para impressão</li>
+                        <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                        <li>🗝️Com garantia de até 7 dias depois do pagamento 100% seguro!!!</li>
+                    </ul>
+                    <h2 class="preco_ancora">De <span class="cortado">R$59,00</span></h2>
+                    <h1 class="preco_final">Por apenas <span>R$35,00</span></h1>
+                    <button class="btn_comprar">Quero meu pack agora ✨</button>
+                    <p class="timer_text">⏰ Oferta acaba em <span id="countdown"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Colorindo a Bíblia - Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script type="module" src="./src/js/script.js"></script>
+
+</html>
