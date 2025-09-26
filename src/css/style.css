@@ -371,6 +371,7 @@ footer {
     }
 
     .img_container {
+        margin-top: 3rem;
         width: 100%;
         background-size: cover;
     }
