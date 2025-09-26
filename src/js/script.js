@@ -51,26 +51,33 @@ function fullscreen() {
         video.requestFullscreen();
     }
 }
-  // 14 horas em milissegundos
-  let countDownTime = 14 * 60 * 60 * 1000; 
 
-  function updateCountdown() {
-    let hours = Math.floor((countDownTime / (1000 * 60 * 60)) % 24);
-    let minutes = Math.floor((countDownTime / (1000 * 60)) % 60);
-    let seconds = Math.floor((countDownTime / 1000) % 60);
+function startCountdown(elementId, durationHours) {
+    const countdownElement = document.getElementById(elementId);
+    if (!countdownElement) return; // se não existir, não faz nada ✅
 
-    document.getElementById("countdown").innerText =
-      `${hours}h ${minutes}m ${seconds}s`;
+    let time = durationHours * 60 * 60; // horas em segundos
 
-    if (countDownTime > 0) {
-      countDownTime -= 1000;
-    } else {
-      document.getElementById("countdown").innerText = "Expirado!";
-    }
-  }
+    const timer = setInterval(() => {
+        const hours = Math.floor(time / 3600);
+        const minutes = Math.floor((time % 3600) / 60);
+        const seconds = time % 60;
 
-  // Atualiza a cada 1 segundo
-  setInterval(updateCountdown, 1000);
+        countdownElement.textContent =
+            `${hours}h ${minutes}m ${seconds}s`;
 
-  // Chamada inicial
-  updateCountdown();
+        if (time <= 0) {
+            clearInterval(timer);
+            countdownElement.textContent = "Oferta Expirada ⌛";
+        }
+
+        time--;
+    }, 1000);
+}
+
+ $(function() {
+    var $easyzoom = $('.easyzoom').easyZoom();
+  });
+// Inicia dois contadores diferentes
+startCountdown("countdown1", 14); // 14 horas para Heróis da Bíblia
+startCountdown("countdown2", 6); // 14 horas para Milagres de Jesus

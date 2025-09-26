@@ -4,34 +4,43 @@
 </html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easyzoom/2.5.0/easyzoom.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easyzoom/2.5.0/easyzoom.js"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
 
-  <!-- Favicon -->
-  <link rel="icon" href="./src/assets/imgs/packs-20-herois-da-biblia-icon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 
-  <!-- Open Graph (para WhatsApp, Facebook, Telegram) -->
-  <meta property="og:title" content="Colorindo a Bíblia">
-  <meta property="og:description" content="Ilustrações bíblicas exclusivas no estilo Bob Goods. Prontas para imprimir e colorir.">
-  <meta property="og:image" content="https://colorindo-a-bibliacom.vercel.app/src/assets/imgs/packs-20-herois-da-biblia-icon.png">
-  <meta property="og:url" content="https://colorindo-a-bibliacom.vercel.app/">
-  <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" href="./src/assets/imgs/packs-20-herois-da-biblia-icon.png" type="image/x-icon">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Colorindo a Bíblia">
-  <meta name="twitter:description" content="Ilustrações bíblicas exclusivas no estilo Bob Goods. Prontas para imprimir e colorir.">
-  <meta name="twitter:image" content="https://colorindo-a-bibliacom.vercel.app/src/assets/imgs/packs-20-herois-da-biblia-icon.png">
+    <!-- Open Graph (para WhatsApp, Facebook, Telegram) -->
+    <meta property="og:title" content="Colorindo a Bíblia">
+    <meta property="og:description"
+        content="Ilustrações bíblicas exclusivas no estilo Bob Goods. Prontas para imprimir e colorir.">
+    <meta property="og:image"
+        content="https://colorindo-a-bibliacom.vercel.app/src/assets/imgs/packs-20-herois-da-biblia-icon.png">
+    <meta property="og:url" content="https://colorindo-a-bibliacom.vercel.app/">
+    <meta property="og:type" content="website">
 
-  <title>Colorindo a Bíblia</title>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Colorindo a Bíblia">
+    <meta name="twitter:description"
+        content="Ilustrações bíblicas exclusivas no estilo Bob Goods. Prontas para imprimir e colorir.">
+    <meta name="twitter:image"
+        content="https://colorindo-a-bibliacom.vercel.app/src/assets/imgs/packs-20-herois-da-biblia-icon.png">
+
+    <title>Colorindo a Bíblia</title>
 </head>
+
 <body>
     <header>
         <div class="title_container">
@@ -96,9 +105,11 @@
         <section class="section_pack">
             <h2 class="sub_title">Pack Heróis da Bíblia</h2>
             <div class="packs">
-                <div class="cover">
-                    <img src="/src/assets/imgs/packs-20-herois-da-biblia.png" alt="" srcset=""
-                        class="eboock_cover">
+                <div class="cover easyzoom easyzoom--overlay">
+                    <a href="/src/assets/imgs/packs-20-herois-da-biblia-ilustração.png" target="_blank">
+                        <img src="/src/assets/imgs/packs-20-herois-da-biblia.png" alt="Pack Heróis da Bíblia"
+                            class="eboock_cover">
+                    </a>
                 </div>
                 <div class="price">
                     <ul class="beneficios">
@@ -111,7 +122,31 @@
                     <h2 class="preco_ancora">De <span class="cortado">R$59,00</span></h2>
                     <h1 class="preco_final">Por apenas <span>R$35,00</span></h1>
                     <button class="btn_comprar">Quero meu pack agora ✨</button>
-                    <p class="timer_text">⏰ Oferta acaba em <span id="countdown"></span></p>
+                    <p class="timer_text">⏰ Oferta acaba em <span id="countdown1"></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="section_pack">
+            <h2 class="sub_title">Pack Milagres de Jesus</h2>
+            <div class="packs">
+                 <div class="cover easyzoom easyzoom--overlay">
+                    <a href="/src/assets/imgs/pack-milagres-de-jesus-ilustração.png" target="_blank">
+                        <img src="/src/assets/imgs/pack-milagres-de-jesus.png" alt="Pack Heróis da Bíblia"
+                            class="eboock_cover">
+                    </a>
+                </div>
+                <div class="price">
+                    <ul class="beneficios">
+                        <li>📖 Os principais milagres de Jesus</li>
+                        <li>🎨 34 ilustrações prontas para colorir</li>
+                        <li>🖨️ Arquivos em PDFS de alta qualidade para impressão</li>
+                        <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                        <li>🗝️Com garantia de até 7 dias depois do pagamento 100% seguro!!!</li>
+                    </ul>
+                    <h2 class="preco_ancora">De <span class="cortado">R$35,00</span></h2>
+                    <h1 class="preco_final">Por apenas <span>R$15,00</span></h1>
+                    <button class="btn_comprar">Quero meu pack agora ✨</button>
+                    <p class="timer_text">⏰ Oferta acaba em <span id="countdown2"></span></p>
                 </div>
             </div>
         </section>
