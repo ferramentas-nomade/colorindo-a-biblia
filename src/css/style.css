@@ -271,7 +271,7 @@ video {
 .eboock_cover {
     width: 500px;
     height: 500px;
-    transition: transform 0.4s ease,  box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     transform-style: preserve-3d;
     cursor: pointer;
     background-color: #ffffff;
@@ -392,6 +392,13 @@ footer {
         width: 95%;
     }
 
+    .video-wrapper {
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
     .video_container {
         margin-top: 2rem;
         width: 100%;
@@ -402,13 +409,11 @@ footer {
 
     video {
         width: 100vw;
-        /* ocupar toda a largura da tela */
         max-width: 100%;
-        /* não limitar no mobile */
-        height: 45vh;
+        height: 35vh;
         /* manter proporção */
         object-fit: cover;
-        border-radius: 12px;
+        border-radius: 15px;
         /* leve arredondado pra não ficar exagerado */
     }
 
@@ -477,6 +482,7 @@ footer {
     }
 
     .cover {
+        margin-top: 2rem;
         width: 100%;
     }
 
@@ -500,11 +506,11 @@ footer {
     }
 
     footer {
-        height: 100px;
+        height: 120px;
     }
 
     footer p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
