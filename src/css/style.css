@@ -21,7 +21,6 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(1.5px);
     /* intensidade do desfoque */
     z-index: -1;
     /* fica atrás do conteúdo */
@@ -29,14 +28,21 @@ body::before {
 
 
 header {
-    /* background-color: blue; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 600px;
     width: 100%;
+    background:
+        linear-gradient(rgba(31, 31, 31, 0.079), rgba(31, 30, 30, 0.800)),
+        url('../assets/gifs/hero-01.gif') no-repeat center center;
+    background-size: 80% 100%;
+    /* Redimensiona SEM cortar */
+    background-attachment: fixed;
+    position: relative;
 }
+
 
 .title_container {
     /* background-color: rgb(255, 0, 68); */
@@ -51,7 +57,7 @@ header {
 }
 
 .title {
-    font-family: 'Gloria Hallelujah', cursive;
+    /* font-family: 'Gloria Hallelujah', cursive; */
     font-size: 5rem;
     font-weight: bold;
     color: #ff3131;
@@ -68,11 +74,13 @@ header {
 .description {
     font-weight: 600;
     font-size: 2rem;
-    color: #000000;
+    color: #fcffd6;
+    text-shadow: 2px 0 #191919;
     text-align: center;
 }
 
 .img_container {
+    display: none;
     /* background-color: rgb(8, 101, 40); */
     background-image: url('../assets/gifs/hero-01.gif');
     background-size: contain;
@@ -84,7 +92,7 @@ header {
 
 main {
     height: auto;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +101,7 @@ main {
 }
 
 .section_1 {
-    margin-top: 4rem;
+    margin-top: 8rem;
     height: 100%;
     width: 100%;
     display: flex;
@@ -104,7 +112,7 @@ main {
 }
 
 .sub_title {
-    font-family: 'Gloria Hallelujah', cursive;
+    /* font-family: 'Gloria Hallelujah', cursive; */
     font-size: 3rem;
     font-weight: bold;
     color: #ff3131;
@@ -182,7 +190,7 @@ video {
 }
 
 .section_2 {
-    margin-top: 4rem;
+    margin-top: 8rem;
     height: max-content;
     width: 75%;
     display: flex;
@@ -230,7 +238,7 @@ video {
 }
 
 .section_pack {
-    margin-top: 4rem;
+    margin-top: 8rem;
     width: 100%;
     height: max-content;
     display: flex;
@@ -263,18 +271,15 @@ video {
 .eboock_cover {
     width: 500px;
     height: 500px;
-    transform: scale(0.9);
-    transition: all 0.4s ease;
+    transition: transform 0.4s ease,  box-shadow 0.4s ease;
+    transform-style: preserve-3d;
     cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 15%;
 }
 
 .eboock_cover:hover {
-    transform: scale(1.05) rotate(-1deg);
-    /* leve aumento e inclinação */
-    border-radius: 50%;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-    background-color: #ff3131;
-    /* sombra mais forte */
+    transform: scale(0.9) rotateY(15deg) rotateX(10deg);
 }
 
 .price {
@@ -350,7 +355,7 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        height: 900px;
+        height: 600px;
         justify-content: center;
         align-items: center;
     }
@@ -388,7 +393,10 @@ footer {
     }
 
     .video_container {
+        margin-top: 2rem;
         width: 100%;
+        height: auto;
+        /* background-color: #191919; */
         /* ocupar toda largura do container */
     }
 
@@ -397,8 +405,9 @@ footer {
         /* ocupar toda a largura da tela */
         max-width: 100%;
         /* não limitar no mobile */
-        height: auto;
+        height: 45vh;
         /* manter proporção */
+        object-fit: cover;
         border-radius: 12px;
         /* leve arredondado pra não ficar exagerado */
     }
@@ -419,6 +428,7 @@ footer {
     }
 
     .section_2 {
+        margin-top: 3rem;
         width: 95%;
     }
 
@@ -428,6 +438,10 @@ footer {
 
     .faq_item p {
         font-size: 1rem;
+    }
+
+    .section_pack {
+        margin-top: 3rem;
     }
 
     .packs {
@@ -482,7 +496,7 @@ footer {
     }
 
     main {
-        margin-bottom: 15rem;
+        margin-bottom: 5rem;
     }
 
     footer {
