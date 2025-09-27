@@ -446,7 +446,10 @@ footer {
     }
 
     .section_pack {
+        padding-top: 2rem;
         margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .packs {
