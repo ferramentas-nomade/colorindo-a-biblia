@@ -1,0 +1,287 @@
+.content_carousel {
+    width: 100%;
+    height: 100%;
+    /* background-color: #e00707; */
+}
+
+.content_btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button_control {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-width: 0.5px;
+    border-style: dashed;
+    border-color: aliceblue;
+    background-color: #2e5192;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.button_control:hover {
+    transform: scale(1);
+    color: #fff;
+    background: #f8af42;
+}
+
+.carousel {
+    margin-top: 1rem;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: #f8af42; */
+}
+
+.carousel_track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    user-select: none;
+    -webkit-user-drag: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.item {
+    display: flex;
+    min-width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 2rem;
+    /* display: flex; */
+    justify-content: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+    background: #1010104d;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 0.5s ease;
+}
+
+/* Estado inicial fora da tela */
+.item.from-right {
+    left: 100%;
+}
+
+.item.from-left {
+    left: -100%;
+}
+
+/* Estado ativo (visível) */
+.item.active {
+    display: flex;
+    left: 0;
+}
+
+/* Estado de saída */
+.item.exit-left {
+    left: -100%;
+}
+
+.item.exit-right {
+    left: 100%;
+}
+
+.item_img {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.item_img p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.item_content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_item {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #ffe59c;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 0.90rem;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beneficios li {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.item_content_price {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preco_ancora {
+    font-size: 1.2rem;
+    color: #f8af42;
+}
+
+.preco_ancora .cortado {
+    text-decoration: line-through;
+    color: aliceblue;
+}
+
+.preco_final {
+    font-size: 1.3rem;
+    color: #f8af42;
+    margin: 1rem 0;
+}
+
+.btn_comprar {
+    margin-top: 1rem;
+    background: #ff3131;
+    color: #fff;
+    width: 70%;
+    height: 80px;
+    font-size: 0.95rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_comprar:hover {
+    background: #ff6b6b;
+    transform: scale(1.05);
+}
+
+.timer_text {
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+#countdown1,
+#countdown2 {
+    font-size: 1.1rem;
+    color: #f8af42;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {
+    #content {
+        height: auto !important;
+        min-height: 50%;
+        /* garante pelo menos a altura do pai */
+    }
+
+
+    .content_carousel {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .carousel {
+        height: 900px;
+    }
+
+    .item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 850px !important;
+    }
+
+    .item_img {
+        width: 100%;
+        height: 60%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item_img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .item_content {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .beneficios {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+        font-size: 0.90rem;
+        line-height: 1.5;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .timer_text {
+        font-size: 0.90rem;
+    }
+
+    #countdown1,
+    #countdown2 {
+        font-size: 1rem;
+    }
+
+    .title_item {
+        font-size: 1.2rem;
+    }
+
+    .btn_comprar {
+        width: 80%;
+        height: 70px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+}
