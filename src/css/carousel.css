@@ -24,7 +24,7 @@
     border-width: 0.5px;
     border-style: dashed;
     border-color: aliceblue;
-    background-color: #2e5192;
+    background-color: #ff3131;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@
 .item {
     display: flex;
     min-width: 100%;
-    height: 80%;
+    height: 85%;
     border-radius: 15px;
     color: #fff;
     font-size: 2rem;
@@ -77,6 +77,7 @@
     top: 0;
     left: 100%;
     transition: left 0.5s ease;
+    overflow: hidden;
 }
 
 /* Estado inicial fora da tela */
@@ -109,7 +110,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
+
+}
+
+.item_img img {
+    border-radius: 20px;
+    width: 230px;
+    margin-left: 10px;
 }
 
 
@@ -209,7 +218,7 @@
 @media screen and (max-width: 480px) {
     #content {
         height: auto !important;
-        min-height: 50%;
+        height: 55%;
         /* garante pelo menos a altura do pai */
     }
 

@@ -35,7 +35,7 @@ video {
 
 #muteButton:hover {
     transform: scale(1);
-    background: #2e5192;
+    background: #f8af42;
 }
 
 @media screen and (max-width: 768px) {
