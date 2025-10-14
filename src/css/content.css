@@ -84,6 +84,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .content{
+        width: 90%;
+    }
     .section_content{
         align-items: center;
         justify-content: center;

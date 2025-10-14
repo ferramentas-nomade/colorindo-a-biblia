@@ -8,7 +8,7 @@
 
 .section_faq_2 {
     width: 95%;
-    height: 80%;
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,10 +139,13 @@
     }
 
     .section_faq_2 {
+        top: 0;
         display: flex;
     }
     .faqs{
-        width: 85%;
+        top: 0;
+        margin-top: 0;
+        width: 90%;
         border-radius: 10px;
     }
     .sub_title {
