@@ -45,4 +45,7 @@ main {
     /* * {
         overflow-x: hidden;
     } */
+     main{
+        margin-top: 0rem;
+     }
 }
