@@ -3,12 +3,13 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #f0f8ff;
     font-family: 'Poppins', sans-serif;
-    height: 400vh;
+    height: auto;
 }
 
 main {
@@ -20,6 +21,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .title-h2 {
     text-align: left;
     font-size: 2.4rem;
@@ -37,4 +39,10 @@ main {
     background: linear-gradient(90deg, #2275ad, #45b0e6);
     margin: 0.5rem auto;
     border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    *{
+         overflow-x: hidden;
+    }
 }
