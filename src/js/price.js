@@ -24,12 +24,16 @@ function priceInit() {
     }
 
     // Inicia os contadores apenas se o DOM tiver carregado
-    startCountdown("countdown1", 14); 
+    startCountdown("countdown1", 14);
     startCountdown("countdown2", 6);
+    startCountdown("countdown3", 6);
+    startCountdown("countdown1-mobile", 14);
+    startCountdown("countdown2-mobile", 6);
+    startCountdown("countdown3-mobile", 6);
 
     // EasyZoom — só se jQuery estiver carregado
     if (window.jQuery) {
-        $(function() {
+        $(function () {
             const $easyzoom = $('.easyzoom').easyZoom();
         });
     }

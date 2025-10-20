@@ -1,164 +1,153 @@
-.content_carousel {
-    width: 100%;
-    height: 100%;
-    /* background-color: #e00707; */
-}
-
-.content_btn {
-    width: 100%;
-    height: 50px;
+.section-slider {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    height: 800px;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
-.button_control {
-    bottom: 20px;
-    right: 20px;
+.slider-cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: absolute;
+    width: 900px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.on {
+    opacity: 1;
+    z-index: 2;
+}
+
+#prev-button,
+#next-button {
+    position: absolute;
+    z-index: 10;
     width: 50px;
     height: 50px;
     border: none;
-    cursor: pointer;
-    font-size: 20px;
-    border-width: 0.5px;
-    border-style: dashed;
-    border-color: aliceblue;
-    background-color: #ff3131;
+    background: linear-gradient(90deg, #2275ad, #45b0e6);
+    box-shadow: 0 8px 18px rgba(34, 117, 173, 0.4);
+    color: #fff;
+    font-size: 1.2rem;
     border-radius: 50%;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    transform: scale(0.9);
-    transition: 0.3s;
+    transition: transform 0.2s ease;
 }
 
-.button_control:hover {
-    transform: scale(1);
-    color: #fff;
-    background: #f8af42;
+#prev-button:hover,
+#next-button:hover {
+    background: linear-gradient(90deg, #45b0e6, #2275ad);
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(34, 117, 173, 0.4);
 }
 
-.carousel {
-    margin-top: 1rem;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    position: relative;
-    /* background-color: #f8af42; */
+#prev-button {
+    left: 12%;
 }
 
-.carousel_track {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
+#next-button {
+    right: 12%;
+}
+
+.card-text {
+    width: 50%;
     height: 100%;
-    gap: 2rem;
-    user-select: none;
-    -webkit-user-drag: none;
-    position: relative;
-    overflow: hidden;
-}
-
-.item {
-    display: flex;
-    min-width: 100%;
-    height: 85%;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 2rem;
-    /* display: flex; */
-    justify-content: center;
-    border: 0.5px solid rgba(255, 255, 255, 0.292);
-    border-radius: 10px;
-    background: #1010104d;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transition: left 0.5s ease;
-    overflow: hidden;
-}
-
-/* Estado inicial fora da tela */
-.item.from-right {
-    left: 100%;
-}
-
-.item.from-left {
-    left: -100%;
-}
-
-/* Estado ativo (visível) */
-.item.active {
-    display: flex;
-    left: 0;
-}
-
-/* Estado de saída */
-.item.exit-left {
-    left: -100%;
-}
-
-.item.exit-right {
-    left: 100%;
-}
-
-.item_img {
-    width: 40%;
-    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+    align-items: center
 }
 
-.item_img img {
-    border-radius: 20px;
-    width: 230px;
-    margin-left: 10px;
-}
-
-
-.item_img p {
-    font-size: 0.85rem;
+.card-ul {
+    list-style: none;
+    padding: 15px;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 2;
     text-align: center;
 }
 
-.item_content {
-    width: 70%;
+.card-title {
+    font-size: 2rem;
+    color: #212020;
+
+}
+
+.card-img {
+    position: relative;
+    width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.title_item {
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    color: #ffe59c;
-}
-
-.beneficios {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-    font-size: 0.90rem;
-    line-height: 1.5;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    border-radius: 30px;
+    /* background-color: aqua; */
 }
 
-.beneficios li {
-    margin-bottom: 1rem;
-    font-weight: 700;
+.card-preview-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212020a0;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 30px;
+    cursor: pointer;
+
 }
 
-.item_content_price {
+.card-preview-img:hover {
+    opacity: 1;
+}
+
+.card-preview-img p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.card-preview-img a {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.card-preview-img a:hover {
+    transform: scale(1.2);
+}
+
+.card-img img {
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card-img:hover img {
+    transform: scale(1.1);
+}
+
+.card-price {
     width: 100%;
     height: 250px;
     display: flex;
@@ -167,28 +156,33 @@
 }
 
 .preco_ancora {
-    font-size: 1.2rem;
-    color: #f8af42;
+    font-size: 1.5rem;
+    color: #212020;
 }
 
 .preco_ancora .cortado {
     text-decoration: line-through;
-    color: aliceblue;
+    color: #2275ad;
 }
 
 .preco_final {
-    font-size: 1.3rem;
-    color: #f8af42;
+    font-size: 1.8rem;
+    color: #212020;
     margin: 1rem 0;
+}
+
+.preco_final .final {
+    color: rgb(255, 2, 2);
 }
 
 .btn_comprar {
     margin-top: 1rem;
-    background: #ff3131;
+    background: linear-gradient(90deg, #de1717, #fc7a69);
+    box-shadow: 0 8px 18px rgba(34, 117, 173, 0.4);
     color: #fff;
     width: 70%;
     height: 80px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     padding: 1rem 2rem;
     border: none;
     border-radius: 15px;
@@ -198,99 +192,80 @@
 }
 
 .btn_comprar:hover {
-    background: #ff6b6b;
-    transform: scale(1.05);
+    background: linear-gradient(90deg, #f8604c, #de1717);
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(34, 117, 173, 0.4);
 }
 
 .timer_text {
-    font-size: 1rem;
-    color: aliceblue;
+    font-size: 1.3rem;
+    color: #212020;
 }
 
 #countdown1,
-#countdown2 {
-    font-size: 1.1rem;
-    color: #f8af42;
+#countdown2,
+#countdown3 {
+    font-size: 1.5rem;
+    color: #2275ad;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 480px) {
-    #content {
-        height: auto !important;
-        height: 55%;
-        /* garante pelo menos a altura do pai */
+@media screen and (max-width: 768px) {
+    .section-slider {
+        display: none;
     }
 
-
-    .content_carousel {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
+    .card-img {
+        width: 90%;
+        height: 40%;
+        /* background-color: #2275ad; */
     }
 
-    .carousel {
-        height: 900px;
+    .card-img img {
+        width: 100%;
+        height: 400px;
     }
 
-    .item {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 850px !important;
-    }
-
-    .item_img {
+    .card-text {
         width: 100%;
         height: 60%;
-        align-items: center;
-        justify-content: center;
     }
 
-    .item_img img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .item_content {
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .beneficios {
-        list-style: none;
-        padding: 0;
-        margin: 1rem 0;
-        font-size: 0.90rem;
-        line-height: 1.5;
+    .card-title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+    }
+
+    .card-ul {
+        font-size: 1rem;
+    }
+
+    .preco_ancora {
+        font-size: 1.4rem;
+    }
+
+    .preco_final {
+        font-size: 1.5rem;
+    }
+
+    #countdown1-mobile,
+    #countdown2-mobile,
+    #countdown3-mobile {
+        font-size: 1.3rem;
+        color: #2275ad;
+        font-weight: bold;
     }
 
     .timer_text {
-        font-size: 0.90rem;
-    }
-
-    #countdown1,
-    #countdown2 {
-        font-size: 1rem;
-    }
-
-    .title_item {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .btn_comprar {
-        width: 80%;
+        width: 60%;
         height: 70px;
-        font-size: 1rem;
-        text-align: center;
+        font-size: 1.2rem;
     }
-
 
 }

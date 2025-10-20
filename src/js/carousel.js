@@ -1,71 +1,39 @@
 
 function carousel() {
+    const card = document.querySelectorAll(".card");
+    const prevBtn = document.getElementById("prev-button");
+    const nextBtn = document.getElementById("next-button");
 
-    const track = document.querySelector(".carousel_track");
-    const items = document.querySelectorAll(".item");
-    const prevBtn = document.getElementById("leftButton");
-    const nextBtn = document.getElementById("rightButton");
+    let currentSlide = 0;
 
-    let index = 0;
-
-    function updateCarousel() {
-        track.style.transform = `translateX(${-index * 100}%)`;
+    function hideCard() {
+        card.forEach(item => item.classList.remove('on'));
     }
 
-    // Botões
-    nextBtn.addEventListener("click", () => {
-        if (index < items.length - 1) {
-            index++;
-            updateCarousel();
+    function showCard() {
+        card[currentSlide].classList.add('on');
+    }
+
+    function nextBtnCard() {
+        hideCard();
+        if (currentSlide === card.length - 1) {
+            currentSlide = 0
+        } else {
+            currentSlide++
         }
-    });
-
-    prevBtn.addEventListener("click", () => {
-        if (index > 0) {
-            index--;
-            updateCarousel();
+        showCard();
+    }
+    function prevBtnCard() {
+        hideCard();
+        if (currentSlide === 0) {
+            currentSlide = card.length - 1
+        } else {
+            currentSlide--
         }
-    });
-
-    // Drag com mouse/touch
-    let startX = 0;
-    let isDragging = false;
-
-    track.addEventListener("mousedown", (e) => {
-        isDragging = true;
-        startX = e.pageX;
-    });
-
-    track.addEventListener("mouseup", (e) => {
-        if (!isDragging) return;
-        let endX = e.pageX;
-        if (startX - endX > 50 && index < items.length - 1) {
-            index++;
-        } else if (endX - startX > 50 && index > 0) {
-            index--;
-        }
-        updateCarousel();
-        isDragging = false;
-    });
-
-    track.addEventListener("touchstart", (e) => {
-        isDragging = true;
-        startX = e.touches[0].pageX;
-    });
-
-    track.addEventListener("touchend", (e) => {
-        if (!isDragging) return;
-        let endX = e.changedTouches[0].pageX;
-        if (startX - endX > 50 && index < items.length - 1) {
-            index++;
-        } else if (endX - startX > 50 && index > 0) {
-            index--;
-        }
-        updateCarousel();
-        isDragging = false;
-    });
-    $(document).ready(function () {
-        // Inicializa todos os EasyZoom
-        var $easyzoom = $('.easyzoom').easyZoom();
-    });
+        showCard();
+    }
+    showCard();
+    
+    prevBtn.addEventListener('click', prevBtnCard);
+    nextBtn.addEventListener('click', nextBtnCard);
 } export default carousel;

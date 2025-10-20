@@ -1,0 +1,30 @@
+.section-card-mobile {
+    margin-top: 3rem;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    gap: 1.5rem;
+}
+
+.card-mobile {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+@media screen and (max-width: 768px) {
+    .section-slider {
+        display: none;
+    }
+
+    .section-card-mobile {
+        display: flex;
+    }
+}

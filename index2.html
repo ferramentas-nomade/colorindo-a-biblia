@@ -4,203 +4,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=Rubik:wght@400;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&family=Bebas+Neue&family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400;700&display=swap"
+    <link rel="stylesheet" href="./src/css-plscw/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easyzoom/2.5.0/easyzoom.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easyzoom/2.5.0/easyzoom.js"></script>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>Colorindo a Bíblia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Colorindo com a Bíblia</title>
 </head>
 
 <body>
-    <header id="header-id">
+    <header>
         <section class="section_header">
-            <h1 class="title">Colorindo a Bíblia</h1>
+            <div class="logo">
+                <img src="src/assets/imgs/logo.png" alt="Logo Colorindo com a Bíblia">
+            </div>
+            <div class="container-header-main">
+                <div class="header-text">
+                    <h1 class="title">Bem-vindo</h1>
+                    <p>
+                        Aqui você encontra uma coleção especial de ilustrações. Cada desenho traz uma temática bíblica
+                        cuidadosamente trabalhada, com exclusividade no estilo criativo de Bob Goods.
+                    </p>
+                    <div class="infor">
+                        <p>//Educativo</p>
+                        <p>//Divertido</p>
+                        <p>//Cristão</p>
+                    </div>
+                </div>
+                <div class="header-img">
+                    <img src="src/assets/imgs/img-1.png" alt="Imagem principal do site">
+                </div>
+            </div>
         </section>
     </header>
+
     <main>
-        <section class="section_faq">
-            <div class="faqs" id="faqs-id">
-                <h2 class="sub_title">Por que colorir com a Bíblia?</h2>
+        <section class="section-row">
+            <p>
+                📚Explore os benefícios do Colorindo com a Bíblia e veja como cada desenho pode transformar aprendizado
+                em
+                devoção, unindo arte, fé e criatividade em um só propósito.
+            </p>
+        </section>
 
-                <details class="faq_item">
-                    <summary>Como essa atividade ajuda meu filho?</summary>
-                    <p>Colorir ilustrações bíblicas desenvolve criatividade, coordenação motora, concentração e
-                        interesse
-                        pela Palavra de Deus.</p>
-                </details>
-
-                <details class="faq_item">
-                    <summary>É adequado para crianças pequenas?</summary>
-                    <p>Sim! Os desenhos são pensados para várias idades e podem ser usados em casa, escola dominical ou
-                        atividades com tias das crianças.</p>
-                </details>
-
-                <details class="faq_item">
-                    <summary>Como ajuda a tirar meu filho das telas?</summary>
-                    <p>Oferecendo uma atividade lúdica e educativa, que une aprendizado, diversão e interação em família
-                        ou
-                        grupo.</p>
-                </details>
-
-                <details class="faq_item">
-                    <summary>Posso usar nas aulas da escola dominical?</summary>
-                    <p>Sim! É perfeito para ensinar valores bíblicos de forma divertida, interativa e prática para
-                        grupos de
-                        crianças.</p>
-                </details>
+        <section class="section-coloumn-right" id="section-1">
+            <div class="section-coloumn-img">
+                <img src="src/assets/imgs/selo-150x150.png" alt="Selo de garantia">
+            </div>
+            <div class="section-coloumn-text">
+                <h2 class="title-h2">Compra segura e garantida</h2>
+                <p>
+                    No <strong>Colorindo com a Bíblia</strong>, sua satisfação é prioridade.
+                    Você tem <strong>7 dias de garantia</strong> para testar nossos produtos.
+                    Se não ficar satisfeito, devolvemos <strong>100% do seu dinheiro,</strong> sem burocracia!
+                </p>
             </div>
         </section>
-        <section class="section_content">
-            <div class="content" style="height: 700px;">
-                <div class="content_description">
-                    <h2 class="title_content">// Bem-vindo ao Colorindo a Bíblia</h2>
-                    <div class="content_mottos">
-                        <p class="mottos">Educativo</p>
-                        <p class="mottos">Divertido</p>
-                        <p class="mottos">Cristão</p>
-                    </div>
-                    <p class="description">
-                        Aqui você encontra uma coleção especial de ilustrações.
-                        Cada desenho traz uma temática bíblica cuidadosamente trabalhada,
-                        com exclusividade no estilo criativo de Bob Goods.
-                        As artes estão prontas para serem impressas em alta qualidade,
-                        ideais para colorir de forma divertida, educativa e inspiradora.
-                    </p>
-                    <div class="content_video">
-                        <video id="myVideo" autoplay muted loop>
-                            <source src="src/assets/videos/0924(1).mp4" type="video/mp4">
-                            Seu navegador não suporta vídeo.
-                        </video>
-                        <button id="muteButton">🔇</button>
-                    </div>
-                </div>
-                <div class="content_img">
-                    <img src="/src/assets/gifs/Colorindo a bíblia.gif" alt="">
-                </div>
-            </div>
-            <div class="content" style="height: 900px;" id="content">
-                <div class="content_description">
-                    <h2 class="title_content">// Ofertas & Packs</h2>
-                    <div class="content_mottos">
-                        <p class="mottos">PDFS Impresão</p>
-                        <p class="mottos">100% Seguro</p>
-                        <p class="mottos">Garantia 7dias</p>
-                    </div>
-                    <p class="description">
-                        Descubra histórias da Bíblia de forma criativa e divertida! Nossos packs trazem ilustrações
-                        exclusivas para você colorir e se conectar ainda mais com a Palavra.
-                    </p>
-                    <div class="content_carousel">
-                        <div class="content_btn">
-                            <button id="leftButton" class="button_control">«</button>
-                            <button id="rightButton" class="button_control">»</button>
-                        </div>
-                        <div class="carousel" id="carousel">
-                            <div class="carousel_track">
-                                <div class="item" id="item-1">
-                                    <div class="item_img">
-                                        <div class="easyzoom easyzoom--overlay">
-                                            <a href="./src/assets/imgs/packs-20-herois-da-biblia-ilustração.png "
-                                                target="_blank">
-                                                <img src="./src/assets/imgs/packs-20-herois-da-biblia.png" alt=""
-                                                    width="250" height="280" oncontextmenu="return false;" />
-                                            </a>
-                                        </div>
-                                        <p>Clique veja algumas prévias :)</p>
-                                    </div>
 
-                                    <div class="item_content">
-                                        <h3 class="title_item">Pack Heróis da Bíblia</h3>
-                                        <ul class="beneficios">
-                                            <li>📖 20 personagens bíblicos</li>
-                                            <li>🎨 +100 ilustrações prontas para colorir</li>
-                                             <li>🕹️ +jogos</li>
-                                            <li>🖨️ Arquivos em PDFS prontos para impresão</li>
-                                            <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
-                                        </ul>
-                                        <div class="item_content_price">
-                                            <h3 class="preco_ancora">De <span class="cortado">R$59,00</span></h3>
-                                            <h2 class="preco_final">Por apenas <span>R$35,00</span></h2>
-                                            <p class="timer_text">⏰ Oferta acaba em <span id="countdown1"></span></p>
-                                            <button class="btn_comprar">Quero meu pack agora ✨</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item" id="item-2">
-                                    <div class="item_img">
-                                        <div class="easyzoom easyzoom--overlay">
-                                            <a href="./src/assets/imgs/pack-milagres-de-jesus-ilustração.png"
-                                                target="_blank">
-                                                <img src="./src/assets/imgs/pack-milagres-de-jesus.png" alt=""
-                                                    width="250" height="280" oncontextmenu="return false;" />
-                                            </a>
-                                        </div>
-                                        <p class="text_previw">Clique veja algumas prévias :)</p>
-                                    </div>
-                                    <div class="item_content">
-                                        <h3 class="title_item">Pack Milagres de Jesus</h3>
-                                        <ul class="beneficios">
-                                            <li>📖 Os principais milagres de Jesus</li>
-                                            <li>🎨 +34 ilustrações prontas para colorir</li>
-                                            <li>🖨️ Arquivos em PDFS prontos para impresão</li>
-                                            <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
-                                        </ul>
-                                        <div class="item_content_price">
-                                            <h3 class="preco_ancora">De <span class="cortado">R$35,00</span></h3>
-                                            <h2 class="preco_final">Por apenas <span>R$15,00</span></h2>
-                                            <p class="timer_text">⏰ Oferta acaba em <span id="countdown2"></span></p>
-                                            <button class="btn_comprar">Quero meu pack agora ✨</button>
-                                        </div>
-                                    </div>
-                                </div>
+        <section class="section-coloumn-right" id="section-2">
+            <div class="section-coloumn-img" id="section-membro">
+                <img src="src/assets/gifs/Beige Minimalist Mood Photo Collage Instagram Post.gif"
+                    alt="Demonstração da área de membros">
+            </div>
+            <div class="section-coloumn-text">
+                <h2 class="title-h2">Área de Membros Exclusiva</h2>
+                <p>
+                    Após realizar sua compra, você receberá acesso imediato à nossa
+                    <strong>Área de Membros,</strong> um espaço seguro e especial onde
+                    poderá <strong>baixar todos os seus PDFs</strong> com temas bíblicos.
+                </p>
+                <p>
+                    Tudo é organizado por categorias e pode ser acessado a qualquer momento,
+                    de forma prática, simples e inspiradora.
+                </p>
+                <a href="#" class="btn-acessar">Acessar Área de Membros</a>
+            </div>
+        </section>
+
+        <section class="section-row">
+            <p>
+                ✨ Escolha seu pack e comece a colorir a Palavra!
+                Abaixo você encontra nossos packs exclusivos com ilustrações bíblicas para imprimir e colorir.
+                Cada pacote foi criado com carinho para fortalecer a fé e inspirar momentos de criatividade cristã.
+            </p>
+        </section>
+
+        <section class="section-slider">
+            <button id="prev-button">&laquo;</button>
+            <div class="slider-cards">
+                <div class="card on" id="card-1">
+                    <div class="card-text">
+                        <h3 class="card-title">Pack Heróis da Bíblia</h3>
+                        <ul class="card-ul">
+                            <li>📖 20 personagens bíblicos</li>
+                            <li>🎨 +100 ilustrações prontas para colorir</li>
+                            <li>🕹️ +jogos interativos(Bônus)</li>
+                            <li>🖨️ Arquivos em PDFs prontos para impressão</li>
+                            <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                        </ul>
+                        <div class="card-price">
+                            <h3 class="preco_ancora">De <span class="cortado">R$49,90</span></h3>
+                            <h2 class="preco_final">Por apenas <span class="final">R$25,95</span></h2>
+                            <p class="timer_text">⏰ Oferta acaba em <span id="countdown1"></span></p>
+                            <button class="btn_comprar"
+                                onclick="window.open('https://pay.kiwify.com.br/2f0JPUo', '_blank')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <div class="easyzoom easyzoom--overlay">
+                            <img src="src/assets/imgs/pack-1.png" alt="Imagem do Pack Heróis da Bíblia">
+                        </div>
+                        <div class="card-preview-img">
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="./src/assets/imgs/packs-20-herois-da-biblia-ilustração.png " target="_blank">
+                                    <p>Clique veja algumas prévias :)</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="content_img">
-                    <img src="/src/assets/imgs/selo-150x150.png" alt="">
+
+                <div class="card" id="card-2">
+                    <div class="card-text">
+                        <h3 class="card-title">Milagres de Jesus</h3>
+                        <ul class="card-ul">
+                            <li>📖 os principais milagres de Jesus</li>
+                            <li>🎨 34 ilustrações prontas para colorir</li>
+                            <li>🕹️ +jogos interativos(Bônus)</li>
+                            <li>🖨️ Arquivo em PDF pronto para impresão</li>
+                            <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                        </ul>
+                        <div class="card-price">
+                            <h3 class="preco_ancora">De <span class="cortado">R$39,90</span></h3>
+                            <h2 class="preco_final">Por apenas <span class="final">R$16,95</span></h2>
+                            <p class="timer_text">⏰ Oferta acaba em <span id="countdown2"></span></p>
+                            <button class="btn_comprar"
+                                onclick="window.open('https://pay.kiwify.com.br/0sP9Kyu', '_blank')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="src/assets/imgs/pack-2.png" alt="Imagem do Pack Heróis da Bíblia">
+                        <div class="card-preview-img">
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="./src/assets/imgs/pack-milagres-de-jesus-ilustração.png " target="_blank">
+                                    <p>Clique veja algumas prévias :)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card-2">
+                    <div class="card-text">
+                        <h3 class="card-title">Rei Jesus</h3>
+                        <ul class="card-ul">
+                            <li>📖 Um livro de história sobre a vida de Jesus com páginas para colorir</li>
+                            <li>🎨 23 ilustrações exclusivas prontas para colorir</li>
+                            <li>🖨️ Arquivo em PDF pronto para impressão</li>
+                            <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                        </ul>
+                        <div class="card-price">
+                            <h3 class="preco_ancora">De <span class="cortado">R$29,90</span></h3>
+                            <h2 class="preco_final">Por apenas <span class="final">R$14,95</span></h2>
+                            <p class="timer_text">⏰ Oferta acaba em <span id="countdown3"></span></p>
+                            <button class="btn_comprar"  onclick="window.open('https://pay.kiwify.com.br/q4mBQhe', '_blank')">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="card-img">
+                        <img src="src/assets/imgs/pack-3.png" alt="Imagem do Pack Heróis da Bíblia">
+                        <div class="card-preview-img">
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="./src/assets/imgs/re " target="_blank">
+                                    <p>Clique veja algumas prévias :)</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <section class="section_faq_2">
-                <div class="faqs">
-                    <h2 class="sub_title">Por que colorir com a Bíblia?</h2>
-
-                    <details class="faq_item">
-                        <summary>Como essa atividade ajuda meu filho?</summary>
-                        <p>Colorir ilustrações bíblicas desenvolve criatividade, coordenação motora, concentração e
-                            interesse
-                            pela Palavra de Deus.</p>
-                    </details>
-
-                    <details class="faq_item">
-                        <summary>É adequado para crianças pequenas?</summary>
-                        <p>Sim! Os desenhos são pensados para várias idades e podem ser usados em casa, escola dominical
-                            ou
-                            atividades com tias das crianças.</p>
-                    </details>
-
-                    <details class="faq_item">
-                        <summary>Como ajuda a tirar meu filho das telas?</summary>
-                        <p>Oferecendo uma atividade lúdica e educativa, que une aprendizado, diversão e interação em
-                            família
-                            ou
-                            grupo.</p>
-                    </details>
-
-                    <details class="faq_item">
-                        <summary>Posso usar nas aulas da escola dominical?</summary>
-                        <p>Sim! É perfeito para ensinar valores bíblicos de forma divertida, interativa e prática para
-                            grupos de
-                            crianças.</p>
-                    </details>
+            <button id="next-button">&raquo;</button>
+        </section>
+        <section class="section-card-mobile">
+            <div class="card-mobile">
+                <div class="card-img">
+                    <div class="easyzoom easyzoom--overlay">
+                        <img src="src/assets/imgs/pack-1.png" alt="Imagem do Pack Heróis da Bíblia">
+                    </div>
+                    <div class="card-preview-img">
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="./src/assets/imgs/packs-20-herois-da-biblia-ilustração.png " target="_blank">
+                                <p>Clique veja algumas prévias :)</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </section>
+                <div class="card-text">
+                    <h3 class="card-title">Pack Heróis da Bíblia</h3>
+                    <ul class="card-ul">
+                        <li>📖 20 personagens bíblicos</li>
+                        <li>🎨 +100 ilustrações prontas para colorir</li>
+                        <li>🕹️ +jogos interativos(Bônus)</li>
+                        <li>🖨️ Arquivos em PDFs prontos para impressão</li>
+                        <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                    </ul>
+                    <div class="card-price">
+                        <h3 class="preco_ancora">De <span class="cortado">R$49,90</span></h3>
+                        <h2 class="preco_final">Por apenas <span class="final">R$25,95</span></h2>
+                        <p class="timer_text">⏰ Oferta acaba em <span id="countdown1-mobile"></span></p>
+                        <button class="btn_comprar"
+                            onclick="window.open('https://pay.kiwify.com.br/2f0JPUo', '_blank')">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-mobile">
+                <div class="card-img">
+                    <img src="src/assets/imgs/pack-2.png" alt="Imagem do Pack Heróis da Bíblia">
+                    <div class="card-preview-img">
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="./src/assets/imgs/pack-milagres-de-jesus-ilustração.png " target="_blank">
+                                <p>Clique veja algumas prévias :)</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">Milagres de Jesus</h3>
+                    <ul class="card-ul">
+                        <li>📖 os principais milagres de Jesus</li>
+                        <li>🎨 34 ilustrações prontas para colorir</li>
+                        <li>🕹️ +jogos interativos(Bônus)</li>
+                        <li>🖨️ Arquivo em PDF pronto para impresão</li>
+                        <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                    </ul>
+                    <div class="card-price">
+                        <h3 class="preco_ancora">De <span class="cortado">R$39,90</span></h3>
+                        <h2 class="preco_final">Por apenas <span class="final">R$16,95</span></h2>
+                        <p class="timer_text">⏰ Oferta acaba em <span id="countdown2-mobile"></span></p>
+                        <button class="btn_comprar"
+                            onclick="window.open('https://pay.kiwify.com.br/0sP9Kyu', '_blank')">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-mobile">
+                <div class="card-img">
+                    <img src="src/assets/imgs/pack-3.png" alt="Imagem do Pack Heróis da Bíblia">
+                    <div class="card-preview-img">
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="./src/assets/imgs/re " target="_blank">
+                                <p>Clique veja algumas prévias :)</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h3 class="card-title">Rei Jesus</h3>
+                    <ul class="card-ul">
+                        <li>📖 Um livro de história sobre a vida de Jesus com páginas para colorir</li>
+                        <li>🎨 23 ilustrações exclusivas prontas para colorir</li>
+                        <li>🖨️ Arquivo em PDF pronto para impressão</li>
+                        <li>✨ Estilo exclusivo inspirado em Bob Goods</li>
+                    </ul>
+                    <div class="card-price">
+                        <h3 class="preco_ancora">De <span class="cortado">R$29,90</span></h3>
+                        <h2 class="preco_final">Por apenas <span class="final">R$14,95</span></h2>
+                        <p class="timer_text">⏰ Oferta acaba em <span id="countdown3-mobile"></span></p>
+                        <button class="btn_comprar"  onclick="window.open('https://pay.kiwify.com.br/q4mBQhe', '_blank')">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section-faq" id="faq">
+            <div class="faqs">
+                <h2 class="title-faq">❓ Dúvidas Frequentes</h2>
+
+                <details class="faq-item">
+                    <summary>A compra é segura?</summary>
+                    <p>
+                        Sim ✅. Todo o processo de compra é feito por um <strong>sistema de pagamento 100%
+                            seguro</strong>,
+                        que utiliza criptografia de dados e certificados de segurança, garantindo a proteção das suas
+                        informações pessoais.
+                        Além disso, você recebe o <strong>comprovante e acesso automático</strong> ao produto logo após
+                        a confirmação do pagamento,
+                        sem nenhuma burocracia.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>O produto é físico ou digital?</summary>
+                    <p>
+                        Nosso produto é <strong>100% digital</strong> 📱.
+                        Após a compra, você recebe acesso imediato aos arquivos em <strong>PDF</strong> para baixar e
+                        imprimir quando quiser.
+                        Não enviamos materiais físicos — todo o conteúdo é online, prático e seguro!
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como vou receber o produto após a compra?</summary>
+                    <p>
+                        Assim que o pagamento for confirmado, você receberá automaticamente um e-mail com o link de
+                        acesso à nossa
+                        <strong>Área de Membros Exclusiva</strong>.
+                        Lá, você poderá fazer o login e <strong>baixar todos os arquivos em PDF</strong> quantas vezes
+                        quiser.
+                        O acesso é imediato, simples e seguro — tudo sem precisar esperar ou falar com suporte.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>O que acontece se eu não gostar do produto?</summary>
+                    <p>
+                        Você tem <strong>7 dias de garantia incondicional</strong> 🛡️.
+                        Caso o material não atenda às suas expectativas, basta solicitar o reembolso dentro desse prazo.
+                        Todo o processo é feito de forma <strong>segura, rápida e sem burocracia</strong> — o valor pago
+                        é devolvido integralmente.
+                        Nosso objetivo é que você se sinta totalmente confiante e satisfeito com a sua compra.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>É adequado para crianças pequenas?</summary>
+                    <p>
+                        Sim! Os desenhos foram criados pensando em várias idades e podem ser usados em casa, na escola
+                        dominical
+                        ou em atividades com grupos de crianças.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como ajuda a tirar meu filho das telas?</summary>
+                    <p>
+                        As atividades proporcionam momentos de lazer longe das telas, incentivando o aprendizado, a
+                        criatividade
+                        e a interação familiar.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Posso usar nas aulas da escola dominical?</summary>
+                    <p>
+                        Com certeza! É perfeito para ensinar valores bíblicos de forma leve e divertida em grupo,
+                        reforçando
+                        princípios cristãos.
+                    </p>
+                </details>
+
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Colorindo a Bíblia - Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Colorindo com a Bíblia — Todos os direitos reservados.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" aria-label="Pinterest" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
     </footer>
+    <script type="module" src="src/js/script.js"></script>
 </body>
-<script type="module" src="./src/js/script.js"></script>
 
 </html>
