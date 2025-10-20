@@ -57,7 +57,7 @@ header {
 .title::after {
     content: "";
     display: block;
-    width: 80px;
+    width: 20%;
     height: 4px;
     background: linear-gradient(90deg, #2275ad, #45b0e6);
     margin: 0.5rem auto;
