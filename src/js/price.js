@@ -1,42 +1,27 @@
 function priceInit() {
-    // Função do contador
-    function startCountdown(elementId, durationHours) {
-        const countdownElement = document.getElementById(elementId);
-        if (!countdownElement) return; // elemento não existe
+    function startCountdown(id, hours) {
+        const el = document.getElementById(id);
+        if (!el) return;
 
-        let time = durationHours * 60 * 60; // horas em segundos
+        let time = hours * 60 * 60;
 
-        const timer = setInterval(() => {
-            const hours = Math.floor(time / 3600);
-            const minutes = Math.floor((time % 3600) / 60);
-            const seconds = time % 60;
+        setInterval(() => {
+            const h = Math.floor(time / 3600);
+            const m = Math.floor((time % 3600) / 60);
+            const s = time % 60;
 
-            countdownElement.textContent =
-                `${hours}h ${minutes}m ${seconds}s`;
+            el.textContent = `${h}h ${m}m ${s}s`;
 
             if (time <= 0) {
-                clearInterval(timer);
-                countdownElement.textContent = "Oferta Expirada ⌛";
+                el.textContent = "Oferta Expirada ⌛";
             }
 
             time--;
         }, 1000);
     }
 
-    // Inicia os contadores apenas se o DOM tiver carregado
-    startCountdown("countdown1", 14);
-    startCountdown("countdown2", 6);
-    startCountdown("countdown3", 6);
+    // único contador ativo
     startCountdown("countdown1-mobile", 14);
-    startCountdown("countdown2-mobile", 6);
-    startCountdown("countdown3-mobile", 6);
-
-    // EasyZoom — só se jQuery estiver carregado
-    if (window.jQuery) {
-        $(function () {
-            const $easyzoom = $('.easyzoom').easyZoom();
-        });
-    }
 }
 
 export default priceInit;

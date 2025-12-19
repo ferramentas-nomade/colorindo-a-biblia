@@ -5,6 +5,6 @@ import priceInit from "./price.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  carouselInit();
+  // carouselInit();
   priceInit();
 });

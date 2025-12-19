@@ -209,6 +209,13 @@
     color: #2275ad;
     font-weight: bold;
 }
+  #countdown1-mobile,
+    #countdown2-mobile,
+    #countdown3-mobile {
+        font-size: 1.3rem;
+        color: #2275ad;
+        font-weight: bold;
+    }
 
 @media screen and (max-width: 768px) {
     .section-slider {
@@ -248,14 +255,6 @@
 
     .preco_final {
         font-size: 1.5rem;
-    }
-
-    #countdown1-mobile,
-    #countdown2-mobile,
-    #countdown3-mobile {
-        font-size: 1.3rem;
-        color: #2275ad;
-        font-weight: bold;
     }
 
     .timer_text {
