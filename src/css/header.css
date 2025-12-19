@@ -109,7 +109,7 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
-        height: 800px;
+        height: 1000px;
         /* background-color: #45b0e6; */
     }
 
