@@ -55,7 +55,7 @@ header {
     justify-content: center;
     align-items: center;
     border-top-left-radius: 65%;
-    background-color: #bcdbf6f1;
+    background: linear-gradient(90deg, #2275ad29, #45b0e6cb);
 }
 
 
