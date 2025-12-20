@@ -92,7 +92,7 @@
 
 .card-img {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -183,6 +183,7 @@
     width: 70%;
     height: 80px;
     font-size: 1.2rem;
+    font-weight: 700;
     padding: 1rem 2rem;
     border: none;
     border-radius: 15px;
@@ -262,9 +263,9 @@
     }
 
     .btn_comprar {
-        width: 60%;
+        width: 70%;
         height: 70px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
 }

@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    margin-top: 3rem;
+    margin-top: 20rem;
     width: 100%;
     /* background-color: blue; */
     display: flex;
@@ -46,6 +46,6 @@ main {
         overflow-x: hidden;
     } */
      main{
-        margin-top: 0rem;
+        margin-top: 20rem;
      }
 }

@@ -39,8 +39,15 @@
   color: #f8ef42;
   transform: scale(1.2);
 }
+
 @media screen and (max-width: 768px) {
   .footer {
     width: 100%;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin: 0;
   }
 }
