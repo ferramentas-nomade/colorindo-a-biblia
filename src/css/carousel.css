@@ -265,7 +265,8 @@
     .btn_comprar {
         width: 70%;
         height: 70px;
-        font-size: 1.1rem;
+        text-align: center;
+        font-size: 0.90rem;
     }
 
 }
