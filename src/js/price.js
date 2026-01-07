@@ -21,7 +21,7 @@ function priceInit() {
     }
 
     // único contador ativo
-    startCountdown("countdown1-mobile", 14);
+    startCountdown("countdown1-mobile", 5);
 }
 
 export default priceInit;
